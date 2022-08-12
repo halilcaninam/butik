@@ -1,181 +1,152 @@
-.container{
-  width:100%;
-  min-height: 100vh;
-  display: ;
+
+ body{
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.7fr 0.7fr 0.7fr;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5% 40% 5% 20%;
+  grid-column-gap: 5%; ;
   grid-auto-flow: dense;
-  grid-gap: 0.05rem;
+ }
+.header img{
+  width: 5%;
+  text-align: center;
+  position: relative;
+  right: 10%;
+  box-sizing: border-box;
+
 }
-.navbar{
-  display: flex;
+.header{
+  display: inline-block;
   align-content: center;
-  background-image: linear-gradient( to bottom,rgb(219, 203, 110),
-   rgb(106, 66, 214)
-  );
-  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  horizontal-align: middle;
+  box-sizing: border-box; 
   grid-row: 1/2;
-  padding-right: 7rem;
-  margin-right: -2rem;
-  
-}
-nav{
-    flex: 1;
-    text-align:right;
-  }
-  li{list-style: none;}
-  .navbar a{
-    align-items: flex-start;
-    font-size: x-large;
-    margin-left: 12%;
-  }
-.logo{
-  width: 5rem;
-  height: auto;
-  align-self: flex-start;
-  opacity: 0.5;
-}
-.menu-icon{
-  width: 3rem;
-  align-self: center;
-
+  grid-column: 1/3;
 
 }
-h1{
-  flex:1;
-  text-align: center;
-  font-size: 3rem;
-  align-self: center;
-  margin-bottom: 3rem;
-  margin-left: 4em;
-  letter-spacing: 2rem;
-  color: rgb(255, 94, 0);
-  text-shadow: 1rem 0.5rem rgb(44, 11, 11);
-  font-style: italic;
+
+header{
+  background: linear-gradient(to right, rgb(23, 48, 23), rgb(241, 241, 64)
+  );
+  grid-row: 1/2;
+  grid-column: 1/3;
 }
-.main{
+.header h1{ color: darkkhaki;
+  text-shadow: 2px 0.5px black;
+}
+.header li,
+ul{
+  display: inline-block;
+  letter-spacing: 0.1rem;
+  position: relative;
+  left: 10%;
+}
+ article{
+  background-image: url(anaarka.jpg);
   grid-row: 2/3;
-  background-image: url(main.webp);
-  background-position: center;
-  width: 100%;
-  background-size: 100%;
-  display: inline-flex;
-  background-repeat: round;
-  border: 1rem solid rgb(106, 66, 214);
+  height: 680px;
+ background-size: cover;
+ display: flex;
+ grid-column: 1/3;
+}
+.main h1{
+   font-size: 3.2rem;
+   border: 2px green solid;
+   border-radius: 60px;
+   grid-column: 1/2;
+   color:rgba(58, 116, 0, 0.911);
+   box-shadow: 3px 4px 4px 3px rgb(0, 29, 0);
+   box-sizing: border-box;
+   width: 60%;
+   grid-row: auto;
+   text-align: center;
+   padding-top: 5%;
+}
+.main h4{
+  text-align: end;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: end;
+  color: rgb(0, 85, 0);
+  font-weight: 900;
+  border: 2px;
+  background-color: rgb(255, 255, 117);
+  font-size: x-large;
+  text-shadow: 2px 2px black;
+  box-shadow: 2px 3px 4px 5px black;
+}
+.main h4:hover{
+  background-color:aliceblue;
+  box-shadow: none;
+  color: darkgreen;
+
 
 }
-.main h2,
-.main a{
-  font-size: 3rem;
-  color: rgb(235, 177, 102);
-  text-decoration: none;
-  flex:1;
+  section{
+   grid-column: 1/3;
+   grid-row: 3/4;
+   text-align: center;
+   border-bottom 15px green solid;
+ }
+ section h1{
+  font-size:5rem;
+  color: rgba(33, 66, 0, 0.911);
+  text-shadow: 2px 2px rgb(206, 253, 111);
+  border: 0.5rem solid rgb(23, 48, 23);
+  margin-top: 3%;
+  background: linear-gradient(to right, rgb(231, 205, 59), rgb(209, 125, 14));
+  box-shadow: inherit; box-shadow: 1px 1px 3px 5px black;
+  margin-top: 6%;
+ }
+ area{
+  grid-row: 4/5;
+  grid-column: 1/3;
+ }
+ .bedava{
   text-align: center;
-  text-shadow: 1rem 0.7rem rgb(44, 11, 11);
-  align-self: flex-end;
-  font-weight: bolder;
-  font-family: 'Times New Roman', Times, serif;
-  margin-right: 50%;
-  position: relative;
-  right: 1.5em;
- 
-}
-a{
-   transition: font-size 0.05s;
-}
-.main p{
-  flex: 1;
+ }
+ .premium{
+  text-align: center;
+ }
+ .premium li{
+  list-style: none;
   text-align: left;
-  border: rgb(221, 87, 203) solid 7px;
-  margin-right: 60%;
-  margin-bottom:50%;
-  font-size: 2.5rem;
-  text-shadow: 1rem 0.3rem rgb(223, 120, 154);
-  color: rgb(41, 0, 14);
-  border-radius: 2rem 3rem;
-  box-sizing: content-box;
-  font-weight:bolder;
-}
-a:hover{
-  font-size: 4rem;
-  
+  font-size: 2.4rem;
+ }
+ .bedava li{
+  list-style: none;
+  text-align: left;
+  font-size: 2.4rem;
 
-}
-.row{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-row: 3/4;
-  margin: 20rem 0;
-
-}
-.col1{
-  flex-basis: content;
-  position: relative;
-  margin-left: 10rem;
-}
-.col1 h2{
-  font-size: 4.3rem;
-  color:rebeccapurple;
-  text-shadow: 0.5rem 0.3rem rgb(235, 177, 102);
-  font-style: italic;
-}
-.col1 h3 {
-  font-size: 3rem;
-  color: rebeccapurple;
-  font-style: italic;
-  text-shadow:0.5rem 0.3rem rgb(235, 177, 102); 
-}
-.col1 h4 {
-  font-size: 3rem;
-  color: rebeccapurple;
-  font-style: italic;
-  text-shadow:0.5rem 0.3rem rgb(235, 177, 102);
-  font-weight: bold; 
-}
-button{
-  width: 4rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgb(34, 4, 22);
-  text-shadow: 0.2rem 0.2rem rgb(231, 226, 183);
-  border: 0;
-  padding-right: 10rem;
-  outline: none;
-  background: linear-gradient( to right,rgb(219, 203, 110),
-  rgb(106, 66, 214));
-  cursor: pointer;
-  border-radius: 2rem;
-  transition: font-size 0.05s;
-  
-}
-button:hover{
-  font-size: 3rem;
-  display: flex;
-  justify-content: space-between;
-}
-.col1::after {
-  content: "";
-  width: 2rem ;
-  height: 57%;
-  background: linear-gradient( to right,rgb(219, 203, 110),
-  rgb(106, 66, 214));
-  position: absolute;
-  left: -40px;
-  top: 8px;
-  border-radius: 3rem;
-}
-.colorbox{
-  position: absolute;
-  left: 40rem;
-  top:40rem; 
-  background: linear-gradient( to right,rgb(219, 203, 110),
-  rgb(106, 66, 214));
-  border-radius: 8rem 0 0 8rem;
-  height: 80%;
-  width: 80%;
-  z-index:-1;
-  margin-top: 60rem;
-
-}
+ }
+ .bedava h4{
+  font-size: x-large;
+  word-spacing: 5%;
+ }
+ .bedava h1{
+  border: 3px darkgreen solid;
+  padding: 4%;
+  background-color: rgba(0, 100, 0, 0.534);
+  margin-bottom: 20%;
+ }
+ .premium h1{
+  border: 3px darkgreen solid;
+  padding: 4%;
+  background-color: rgba(0, 100, 0, 0.788);
+  color: antiquewhite;
+  margin-bottom: 20%;
+ }
+ .bedava:hover{
+  color: rgb(42, 66, 18);
+ }
+ .bedava h1:hover{
+  background-color: rgb(119, 238, 0);
+ }
+ .premium:hover{
+  color: rgb(43, 71, 0);
+ }
+ .premium h1:hover{
+  background-color: rgb(5, 46, 8);
+  color: rgb(167, 235, 103);
+ }
